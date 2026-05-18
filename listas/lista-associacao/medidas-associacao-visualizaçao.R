@@ -10,6 +10,15 @@ summary(mtcars$wt)
 
 cor(mtcars$mpg, mtcars$hp)
 cor(mtcars$mpg, mtcars$wt)
+cor(mtcars$mpg, mtcars$wt, method = "spearman")
+cor(mtcars$mpg, mtcars$wt, method = "kendall")
+cor(mtcars$mpg, mtcars$hp, method = "kendall")
+cor(mtcars$mpg, mtcars$hp, method = "spearman")
+
+
+
+
+
 # 1. As correlações são positivas ou negativas? As correlações são negativas
 # 2. Qual associação parece mais forte? A associação entre as variáveis mpg e wt
 # 3. O que significa uma correlação negativa nesse contexto? Significa que carros mais pesados tendem a apresentar menor eficiência de combustível(menor mpg).
